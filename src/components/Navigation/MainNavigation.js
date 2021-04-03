@@ -1,18 +1,21 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../logo.svg";
+import NavigationList from "./NavigationList";
 
 const MainNavigation = () => (
-    <header className="w-1/3 flex flex-col">
-        <img src={logo} className="" alt="Date Counter logo" />
-        <nav className="flex-grow bg-gray-900 bg-opacity-25 rounded-r-xl w-3/4 my-8 pl-8 py-16">
-            <ul className="text-6xl text-gray-100 h-full flex flex-col justify-evenly">
-                <li>Counter</li>
-                <li>Stats</li>
-                <li>FAD</li>
-                <li>About</li>
-            </ul>
-        </nav>
-    </header>
+    <div className="lg:flex lg:justify-between lg:items-center">
+        <NavLink to="/">
+            <img
+                src={logo}
+                className="mx-auto lg:mx-0"
+                alt="Date Counter logo"
+            />
+        </NavLink>
+        <div className="hidden lg:block">
+            <NavigationList />
+        </div>
+    </div>
 );
 
 export default MainNavigation;
