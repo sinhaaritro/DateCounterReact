@@ -179,6 +179,7 @@ module.exports = {
             DEFAULT: "1",
         },
         fontFamily: {
+            balsamiq: ["Balsamiq Sans", "cursive"],
             sans: [
                 "ui-sans-serif",
                 "system-ui",
