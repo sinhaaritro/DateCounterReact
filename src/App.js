@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import MainNavigation from "./components/Navigation/MainNavigation";
 import NavigationList from "./components/Navigation/NavigationList";
-import DateCounter from "./pages/DateCounter";
+import DateCounter from "./pages/DateCounter/DateCounter";
 import About from "./pages/About";
 import Stats from "./pages/Stats";
 import "./App.css";
